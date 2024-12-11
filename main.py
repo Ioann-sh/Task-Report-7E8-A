@@ -366,12 +366,12 @@ def arr_in_string(arr):
 
 # -------------------------------------------------------------------------------------------------------------------------------------
 
-print('Анализ символов')
-print(find_repeated_chars(ciphertext2))
-print('Анализ подстрок')
-print(find_repeated_substrings(ciphertext2, 2))
-print('Общий анализ')
-print(analyze_encryption(plaintexts, ciphertexts))
+# print('Анализ символов')
+# print(find_repeated_chars(ciphertext2))
+# print('Анализ подстрок')
+# print(find_repeated_substrings(ciphertext2, 2))
+# print('Общий анализ')
+# print(analyze_encryption(plaintexts, ciphertexts))
 
 # print('Анализ сравнения на совпадениия двух шифртекстов')
 # print('По символам')
@@ -384,24 +384,24 @@ print(analyze_encryption(plaintexts, ciphertexts))
 # matching_array = create_matching_array(ciphertexts[0], ciphertexts[1])
 # print(matching_array)
 
-# #Шифртекст без шума
-# ciphertext_without_noise = remove_noise_from_ciphertext(ciphertext1)
-# #Шифртекст по блокам
-# normalized_ciphertext_arr = pair_characters_from_blocks(ciphertext_without_noise)
+#Шифртекст без шума
+ciphertext_without_noise = remove_noise_from_ciphertext(ciphertext1)
+#Шифртекст по блокам
+normalized_ciphertext_arr = pair_characters_from_blocks(ciphertext_without_noise)
 
-# alphabet_mapping = {
-#     'HF': 'в',
-#     'NA': 'а',
-#     'CK': 'х',
-#     'OI': 'и',
-#     'KC': 'ч',
-#     'FG': 'т',
-#     'NO': 'к',
-#     'KI': 'о',
-#     'FA': 'з',
-#     'CD': '1',
-#     'AA': ' '
-# }
+alphabet_mapping = {
+    'HF': 'в',
+    'NA': 'а',
+    'CK': 'х',
+    'OI': 'и',
+    'KC': 'ч',
+    'FG': 'т',
+    'NO': 'к',
+    'KI': 'о',
+    'FA': 'з',
+    'CD': '1',
+    'AA': ' '
+}
 
-# result_text = arr_in_string(replace_syllables_with_letters(normalized_ciphertext_arr, alphabet_mapping))
-# print(result_text)
+result_text = arr_in_string(replace_syllables_with_letters(normalized_ciphertext_arr, alphabet_mapping))
+print(result_text)
